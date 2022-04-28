@@ -11,4 +11,6 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 app.use(cors());
 
+app.use('/static/image/tarot-card', express.static('static/images/tarot-card'));
+
 module.exports = app;
