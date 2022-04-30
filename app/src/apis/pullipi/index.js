@@ -1,8 +1,8 @@
 'use strict';
 
-const exxpress = require('express');
+const express = require('express');
 
-const router = exxpress.Router();
+const router = express.Router();
 
 const pullipiCtrl = require('./pullipi.ctrl');
 
