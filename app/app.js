@@ -11,7 +11,7 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 app.use(cors());
 
-app.use('/static/image/tarot-card', express.static('static/images/tarot-card'));
+app.use('/public', express.static('public'));
 
 const pullipi = require('./src/apis/pullipi');
 
