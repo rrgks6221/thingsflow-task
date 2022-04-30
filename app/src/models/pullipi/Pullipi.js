@@ -31,7 +31,6 @@ class Pullipi {
 
       return makeResponse(200, '타로카드 조회', { greetings, tarotCards });
     } catch (err) {
-      console.log(err);
       return Error.ctrl(err);
     } finally {
       conn?.release();
