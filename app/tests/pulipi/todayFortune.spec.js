@@ -19,4 +19,18 @@ describe('풀리피의 오늘의 운세', () => {
     expect(response.greetings).toEqual('오늘은 아무개의 운세가 어떨지');
     expect(response.tarotCards.length).toEqual(5);
   });
+
+  it('인사말과 타로카드 GET 요청 성공 [404]', async () => {
+    let response = await server
+      .get('/api/pullipi/asd')
+      .set('Content-Type', 'application/json');
+
+    response = JSON.parse(response.text);
+
+    expect(response).toEqual({
+      success: false,
+      msg: '해당 스킬은 존재하지 않습니다.',
+      status: 404,
+    });
+  });
 });
