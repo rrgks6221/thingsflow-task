@@ -26,6 +26,22 @@ class PullipiStorage {
       throw err;
     }
   }
+
+  static async findOneTarotCardById(conn, tarotCardId) {
+    try {
+      const query = `
+        SELECT
+        name, description, image_url AS imageUrl
+        FROM tarot_cards
+        WHERE id = ?;`;
+
+      const tarotCards = await conn.query(query, tarotCardId);
+
+      return tarotCards[0];
+    } catch (err) {
+      throw err;
+    }
+  }
 }
 
 module.exports = PullipiStorage;

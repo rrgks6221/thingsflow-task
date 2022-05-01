@@ -12,6 +12,14 @@ const process = {
 
     return processCtrl(res, response);
   },
+
+  findOneTarotCardById: async (req, res) => {
+    const pullipi = new Pullipi(req);
+
+    const response = await pullipi.findOneTarotCardById();
+
+    return processCtrl(res, response);
+  },
 };
 
 module.exports = process;

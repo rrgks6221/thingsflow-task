@@ -36,6 +36,34 @@ class Pullipi {
       conn?.release();
     }
   }
+
+  async findOneTarotCardById() {
+    let conn;
+
+    try {
+      conn = await pool.getConnection();
+
+      const greetings = await PullipiStorage.findOneSkillById(
+        conn,
+        this.params.skillId
+      );
+
+      if (!greetings) {
+        return makeResponse(404, '해당 스킬은 존재하지 않습니다.');
+      }
+
+      const tarotCard = await PullipiStorage.findOneTarotCardById(
+        conn,
+        this.params.tarotCardId
+      );
+
+      return makeResponse(200, '타로카드 조회', { tarotCard });
+    } catch (err) {
+      return Error.ctrl(err);
+    } finally {
+      conn?.release();
+    }
+  }
 }
 
 module.exports = Pullipi;
