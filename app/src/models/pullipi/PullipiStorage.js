@@ -31,13 +31,13 @@ class PullipiStorage {
     try {
       const query = `
         SELECT
-        name, description, image_url AS imageUrl
+        name, description, iage_file_name AS imageFileName
         FROM tarot_cards
         WHERE id = ?;`;
 
       const tarotCards = await conn.query(query, tarotCardId);
 
-      return tarotCards[0];
+      return tarotCards[0][0];
     } catch (err) {
       throw err;
     }

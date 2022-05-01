@@ -57,6 +57,14 @@ class Pullipi {
         this.params.tarotCardId
       );
 
+      if (!tarotCard) {
+        return makeResponse(404, '해당 타로카드는 존재하지 않습니다.');
+      }
+
+      tarotCard.imageUrl = `${process.env.SERVER_ADDRESS}${process.env.IMAGE_PATH}/${tarotCard.imageFileName}`;
+
+      delete tarotCard.imageFileName;
+
       return makeResponse(200, '타로카드 조회', { tarotCard });
     } catch (err) {
       return Error.ctrl(err);
