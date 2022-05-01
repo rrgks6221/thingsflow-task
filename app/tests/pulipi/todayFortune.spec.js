@@ -14,7 +14,7 @@ describe('풀리피의 오늘의 운세', () => {
     response = JSON.parse(response.text);
 
     expect(response.success).toEqual(true);
-    expect(response.msg).toEqual('타로카드 조회');
+    expect(response.clientMsg).toEqual('타로카드 조회');
     expect(response.status).toEqual(200);
     expect(response.greetings).toEqual('오늘은 아무개의 운세가 어떨지');
     expect(response.tarotCards.length).toEqual(5);
@@ -29,7 +29,7 @@ describe('풀리피의 오늘의 운세', () => {
 
     expect(response).toEqual({
       success: false,
-      msg: '해당 스킬은 존재하지 않습니다.',
+      clientMsg: '해당 스킬은 존재하지 않습니다.',
       status: 404,
     });
   });
