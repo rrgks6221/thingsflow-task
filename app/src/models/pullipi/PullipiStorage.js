@@ -31,7 +31,7 @@ class PullipiStorage {
     try {
       const query = `
         SELECT
-        name, description, iage_file_name AS imageFileName
+        name, description, image_file_name AS imageFileName
         FROM tarot_cards
         WHERE id = ?;`;
 
