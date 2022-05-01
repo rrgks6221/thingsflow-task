@@ -1,9 +1,9 @@
 'use strict';
 
-module.exports = (status, msg, moreInfo) => {
+module.exports = (status, clientMsg, moreInfo) => {
   const response = {
     success: status < 400,
-    msg,
+    clientMsg,
     status,
   };
 
