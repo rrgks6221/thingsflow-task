@@ -36,27 +36,27 @@
     id INT NOT NULL AUTO_INCREMENT,
     name VARCHAR(255) NOT NULL,
     description VARCHAR(255) NOT NULL,
-    image_url VARCHAR(255) NOT NULL,
+    image_file_name VARCHAR(255) NOT NULL,
 
     PRIMARY KEY(id)
   );
 
   INSERT INTO tarot_cards
-  (name, description, image_url)
+  (name, description, image_file_name)
   VALUES
-  ("THE CHARIOT", "THE CHARIOT 해석", "http://localhost:3000/static/image/tarot-card/chariot-6016921__340.jpg"),
-  ("THE EMPRESS", "THE EMPRESS 해석", "http://localhost:3000/static/image/tarot-card/empress-6016923__340.jpg"),
-  ("THE HIEROPHANT", "THE HIEROPHANT 해석", "http://localhost:3000/static/image/tarot-card/hierophant-6016942__340.jpg"),
-  ("KING OF CUPS", "KING OF CUPS 해석", "http://localhost:3000/static/image/tarot-card/king-of-cups-6686829__340.jpg"),
-  ("KNIGHT OF CUPS", "KNIGHT OF CUPS 해석", "http://localhost:3000/static/image/tarot-card/knight-of-cups-6686830__340.jpg"),
-  ("PAGE OF CUPS", "PAGE OF CUPS 해석", "http://localhost:3000/static/image/tarot-card/page-of-cups-6686831__340.jpg"),
-  ("WHEEL OF FORTUNE", "WHEEL OF FORTUNE 해석", "http://localhost:3000/static/image/tarot-card/tarot-6249967__340.jpg"),
-  ("THE STAR", "THE STAR 해석", "http://localhost:3000/static/image/tarot-card/tarot-6249976__340.jpg"),
-  ("THE SUN", "THE SUN 해석", "http://localhost:3000/static/image/tarot-card/tarot-6249979__340.jpg"),
-  ("THE LOVERS", "THE LOVERS 해석", "http://localhost:3000/static/image/tarot-card/tarot-cards-6103697__340.jpg"),
-  ("THE MOON", "THE MOON 해석", "http://localhost:3000/static/image/tarot-card/tarot-cards-6103698__340.jpg"),
-  ("THE SUN", "THE SUN 해석", "http://localhost:3000/static/image/tarot-card/tarot-cards-6103700__340.jpg"),
-  ("TEMPERANCE", "TEMPERANCE 해석", "http://localhost:3000/static/image/tarot-card/temperance-6016917__340.jpg"),
-  ("THREE OF CUPS", "THREE OF CUPS 해석", "http://localhost:3000/static/image/tarot-card/three-of-cups-6686834__340.jpg"),
-  ("TWO OF CUPS", "TWO OF CUPS 해석", "http://localhost:3000/static/image/tarot-card/two-of-cups-6686833__340.jpg");
+  ("THE CHARIOT", "THE CHARIOT 해석", "chariot-6016921__340.jpg"),
+  ("THE EMPRESS", "THE EMPRESS 해석", "empress-6016923__340.jpg"),
+  ("THE HIEROPHANT", "THE HIEROPHANT 해석", "hierophant-6016942__340.jpg"),
+  ("KING OF CUPS", "KING OF CUPS 해석", "king-of-cups-6686829__340.jpg"),
+  ("KNIGHT OF CUPS", "KNIGHT OF CUPS 해석", "knight-of-cups-6686830__340.jpg"),
+  ("PAGE OF CUPS", "PAGE OF CUPS 해석", "page-of-cups-6686831__340.jpg"),
+  ("WHEEL OF FORTUNE", "WHEEL OF FORTUNE 해석", "tarot-6249967__340.jpg"),
+  ("THE STAR", "THE STAR 해석", "tarot-6249976__340.jpg"),
+  ("THE SUN", "THE SUN 해석", "tarot-6249979__340.jpg"),
+  ("THE LOVERS", "THE LOVERS 해석", "tarot-cards-6103697__340.jpg"),
+  ("THE MOON", "THE MOON 해석", "tarot-cards-6103698__340.jpg"),
+  ("THE SUN", "THE SUN 해석", "tarot-cards-6103700__340.jpg"),
+  ("TEMPERANCE", "TEMPERANCE 해석", "temperance-6016917__340.jpg"),
+  ("THREE OF CUPS", "THREE OF CUPS 해석", "three-of-cups-6686834__340.jpg"),
+  ("TWO OF CUPS", "TWO OF CUPS 해석", "two-of-cups-6686833__340.jpg");
 ```
