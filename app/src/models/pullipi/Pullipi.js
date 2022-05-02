@@ -65,7 +65,7 @@ class Pullipi {
 
       delete tarotCard.imageFileName;
 
-      return makeResponse(200, '타로카드 조회', { tarotCard });
+      return makeResponse(200, '타로카드 상세정보 조회', { tarotCard });
     } catch (err) {
       return Error.ctrl(err);
     } finally {
