@@ -8,7 +8,7 @@ describe('응답 데이터 생성 로직', () => {
 
     expect(response).toEqual({
       success: true,
-      msg: '클라이언트 메시지',
+      clientMsg: '클라이언트 메시지',
       status: 200,
     });
   });
@@ -19,7 +19,7 @@ describe('응답 데이터 생성 로직', () => {
 
     expect(response).toEqual({
       success: true,
-      msg: '클라이언트 메시지',
+      clientMsg: '클라이언트 메시지',
       status: 200,
       temp1: moreInfo.temp1,
       temp2: moreInfo.temp2,
@@ -31,7 +31,7 @@ describe('응답 데이터 생성 로직', () => {
 
     expect(response).toEqual({
       success: true,
-      msg: '클라이언트 메시지',
+      clientMsg: '클라이언트 메시지',
       status: 300,
     });
   });
@@ -41,7 +41,7 @@ describe('응답 데이터 생성 로직', () => {
 
     expect(response).toEqual({
       success: false,
-      msg: '클라이언트 메시지',
+      clientMsg: '클라이언트 메시지',
       status: 400,
     });
   });
