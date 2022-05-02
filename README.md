@@ -10,9 +10,9 @@
 
 ### 언어 및 프레임워크
 
-> 언어: Node.js 16.14.2 ver, npm 8.5.0 ver
-> 프레임워크: Express.js 4.18.0 ver
-> 테스트 프레임워크 Jest 28.0.2 ver
+- 언어: Node.js 16.14.2 ver, npm 8.5.0 ver
+- 프레임워크: Express.js 4.18.0 ver
+- 테스트 프레임워크 Jest 28.0.2 ver
 
 ### 환경변수
 
